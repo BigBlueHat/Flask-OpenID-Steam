@@ -28,7 +28,7 @@ class User(db.Model):
         if rv is None:
             rv = User()
             rv.steam_id = steam_id
-            dbs.session.add(rv)
+            db.session.add(rv)
         return rv
 
 
